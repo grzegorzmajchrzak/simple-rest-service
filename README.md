@@ -1,22 +1,27 @@
 # Simple REST CRUD webservice
+How to run:
+```
+$ mvn clean install
+$ java -jar target/simple-rest-service-0.1.0.jar
+```
 
-### Available operations:
-1. Create new person:
+## Available operations:
+### Create new person:
 ```
 POST http://localhost:8080/create
 body: { "name" : "Tom"     }
 ```
 Name is validated against regexp "\\w+".
-2. Read all persons:
+### Read all persons:
 ```
 GET http://localhost:8080/read
 ```
-3. Update created person:
+### Update created person:
 ```
 PUT http://localhost:8080/update
 body: {"name": "GregUpdated", "id": 0 }
 ```
-4. Delete person:
+### Delete person:
 ```
 DELETE http://localhost:8080/delete/{id}
 ```
