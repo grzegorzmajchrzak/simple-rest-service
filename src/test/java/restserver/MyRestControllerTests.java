@@ -38,7 +38,7 @@ public class MyRestControllerTests {
 
     @Test
     public void read_emptyResponseIfPersonNotAdded() throws Exception {
-        this.mockMvc.perform(get("/read")).andDo(print())
+        this.mockMvc.perform(get("/api/read")).andDo(print())
                 .andExpect(status().isOk())
                 .andExpect(content().json("[]"));
     }
