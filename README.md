@@ -18,7 +18,7 @@ GET http://localhost:8080/api/read
 ```
 ### Update created person:
 ```
-PUT http://localhost:8080/update
+PUT http://localhost:8080/api/update
 body: {"name": "GregUpdated", "id": 0 }
 ```
 ### Delete person:
